@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Baloo 2", sans-serif;
+  --font-body: "Quicksand", sans-serif;
+
+  --color-brand-50: #eef6ff;
+  --color-brand-100: #d9ecff;
+  --color-brand-200: #b6d9ff;
+  --color-brand-300: #86c0ff;
+  --color-brand-400: #519ffb;
+  --color-brand-500: #2a7ff0;
+  --color-brand-600: #1c62d1;
+  --color-brand-700: #184ea8;
+  --color-brand-800: #194286;
+  --color-brand-900: #19396e;
+
+  --color-accent-pink: #ffb3c6;
+  --color-accent-mint: #b6f0d6;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background: linear-gradient(180deg, #f5f9ff 0%, #eef4fb 100%);
+  color: #16324f;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+}
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-300);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-track { background: transparent; }
+
+.card-tilt {
+  transform-style: preserve-3d;
+  transition: transform .35s ease, box-shadow .35s ease;
+}
