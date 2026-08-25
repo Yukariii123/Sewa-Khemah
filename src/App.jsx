@@ -25,7 +25,7 @@ export default function App() {
   return (
     <AuthProvider>
       <CartProvider>
-        <BrowserRouter basename="/Sewa-Khemah/">
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Toaster position="top-center" />
           <Navbar />
           <Routes>
